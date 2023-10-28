@@ -10,7 +10,7 @@ namespace example2_1
             Console.WriteLine($"A: {Instances++}");
         }
     }
-     
+    
     public class B
     {
         private static int Instances = 1;
