@@ -10,7 +10,7 @@ namespace Infra
         private List<Document> _documents = new List<Document>();
         public void CreateDocument(Document document)
         {
-            document.Id = _documents.Max(x => x.Id);
+            document.Id = _documents.Count > 0 ? _documents.Max(x => x.Id) : 1;
             _documents.Add(document);
         }
         
